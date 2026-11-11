@@ -56,7 +56,9 @@
     font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-  img, video { display: block; max-width: 100%; }
+  /* height: auto keeps the width/height attributes for layout stability without letting them fix the
+     height once CSS narrows the width (that squashed the logo). */
+  img, video { display: block; max-width: 100%; height: auto; }
   a { color: var(--pale-blue); }
 
   .display { font-family: "Bodo Amat", system-ui, sans-serif; font-weight: normal; letter-spacing: 0.02em; }
