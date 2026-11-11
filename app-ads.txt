@@ -1,3 +1,7 @@
+# Sleeping Otter Games - own AdMob account (direct seller)
+google.com, pub-2849908521984393, DIRECT, f08c47fec0942fa0
+
+# LevelPlay mediation partners
 start.io, 197760873, RESELLER
 start.io, 168507669, RESELLER
 improvedigital.com, 2464, RESELLER
