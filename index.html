@@ -99,8 +99,11 @@
   .btn.primary { background: var(--tan); color: var(--text-brown); border: 2px solid var(--umber); }
   .btn.ghost { color: var(--cream); border: 2px solid var(--slate-line); }
 
-  .banner { margin: 36px auto 0; border-radius: 18px; overflow: hidden; border: 2px solid var(--slate-line); box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
-  .banner img { width: 100%; height: auto; aspect-ratio: 1920 / 823; }
+  /* The image carries its own frame (compose_panels.py, joined layout), so no CSS border. The radius
+     matches the frame's corners as a share of the image (12U on 3788x1594) and clips the ink left
+     outside them. */
+  .banner { margin: 36px auto 0; border-radius: 1.04% / 2.48%; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
+  .banner img { width: 100%; height: auto; aspect-ratio: 1920 / 808; }
 
   /* ---------- Sections ---------- */
   /* section.wrap, not section: .wrap's own padding would otherwise win and drop the spacing. */
@@ -108,6 +111,8 @@
   h1, h2, h3 { text-wrap: balance; }
   h2 { font-size: clamp(26px, 4vw, 36px); text-align: center; margin: 0 0 8px; color: var(--paper); }
   .sub { text-align: center; color: var(--muted); margin: 0 0 32px; }
+  /* No subtitle under this heading, so it carries the gap to the rail itself. */
+  #screens h2 { margin-bottom: 28px; }
 
   .plays { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 40px; align-items: center; }
   .phone {
@@ -192,7 +197,7 @@
     </div>
 
     <div class="banner">
-      <img src="assets/hero.webp" width="1920" height="823"
+      <img src="assets/hero.webp" width="1920" height="808"
            alt="Alice, Forcana's companion, unleashing special attacks on an ogre by a dark lake, a bear in the forest and an armored brute in the desert.">
     </div>
   </div>
@@ -225,7 +230,6 @@
 
   <section id="screens" class="wrap">
     <h2 class="display">A look inside</h2>
-    <p class="sub">Swipe through the screenshots.</p>
     <div class="rail" tabindex="0" aria-label="Screenshots">
       <img src="assets/shots/01_defense.webp" width="600" height="1300" loading="lazy" alt="Time perfect parries and dodges: swipe to the rhythm against the Winter Ogre.">
       <img src="assets/shots/02_sword.webp" width="600" height="1300" loading="lazy" alt="Power your sword with the beat: the sword minigame scoring Perfect.">
