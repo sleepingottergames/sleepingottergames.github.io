@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Forcana: Battle Rhythm RPG</title>
-<meta name="description" content="Forcana is a battle rhythm game: swipe to parry and dodge on the beat, tap to power up your weapons, and stack spell cards to beat every boss. Soft launched in New Zealand, coming soon worldwide.">
+<meta name="description" content="Forcana is a battle rhythm game: swipe to the beat to parry and dodge, tap to the rhythm to power up your sword, spear and wand, and build the ultimate spell deck. Soft launched in New Zealand, coming soon worldwide.">
 <meta name="theme-color" content="#1B252D">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Sleeping Otter Games">
 <meta property="og:title" content="Forcana: the battle rhythm game you've been waiting for">
-<meta property="og:description" content="Swipe to parry and dodge on the beat, tap to power your weapons, stack spell cards. Soft launched in New Zealand, coming soon worldwide.">
+<meta property="og:description" content="Conduct rhythm battles and build powerful spell decks. Soft launched in New Zealand, coming soon worldwide.">
 <meta property="og:url" content="https://sleepingottergames.github.io/">
 <meta property="og:image" content="https://sleepingottergames.github.io/assets/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -125,13 +125,14 @@
     background: var(--paper); color: var(--text-brown);
     border: 3px solid var(--slate-line); border-radius: 18px; padding: 28px 28px 20px;
   }
-  .card h3 { margin: 0 0 4px; font-size: 26px; color: var(--umber); }
+  .card h3 { margin: 0 0 12px; font-size: 26px; color: var(--umber); }
   .card .role { margin: 0 0 16px; color: #6D5D43; }
   .card ul { list-style: none; padding: 0; margin: 0; }
   .card li { display: grid; grid-template-columns: 28px 1fr; gap: 8px; padding: 10px 0; border-top: 1px solid #DDC295; }
   .card li:first-child { border-top: 0; }
   .card li .ico { font-size: 20px; line-height: 1.4; }
   .card li b { color: var(--umber); }
+  .card .closer { margin: 14px 0 4px; padding-top: 14px; border-top: 1px solid #DDC295; color: var(--umber); font-weight: 600; }
 
   /* Screenshot rail: scroll-snaps on phones, wraps into a grid on wide screens. */
   .rail {
@@ -184,7 +185,7 @@
   <div class="wrap hero">
     <img class="logo" src="assets/logo.png" alt="Forcana" width="931" height="319">
     <h1 class="display">The battle rhythm game you've been waiting for</h1>
-    <p class="lede">Swipe to parry and dodge on the beat, tap to power up your sword, spear and magic, and stack spell cards to take down every boss.</p>
+    <p class="lede">Conduct rhythm battles and build powerful spell decks!</p>
 
     <div class="status" role="status">
       <span class="pill live"><span class="dot" aria-hidden="true"></span>Soft launched in New Zealand</span>
@@ -215,15 +216,15 @@
 
       <div class="card">
         <h3 class="display">As a Forcana Conductor, you will:</h3>
-        <p class="role">Rhythm battles, spell decks and a companion that's all yours.</p>
         <ul>
-          <li><span class="ico" aria-hidden="true">🛡️</span><span><b>Parry and dodge</b> enemy attack strings by swiping perfectly on the beat</span></li>
-          <li><span class="ico" aria-hidden="true">⚔️</span><span><b>Tap to the rhythm</b> to power up your sword, spear and magic</span></li>
-          <li><span class="ico" aria-hidden="true">🃏</span><span><b>Stack spell cards</b> into the ultimate deck and unleash absurdly big numbers</span></li>
+          <li><span class="ico" aria-hidden="true">🛡️</span><span><b>Swipe to the beat</b> to parry and dodge enemy attacks</span></li>
+          <li><span class="ico" aria-hidden="true">⚔️</span><span><b>Tap to the rhythm</b> to power up your sword, spear and wand</span></li>
+          <li><span class="ico" aria-hidden="true">🃏</span><span><b>Build the ultimate spell deck</b> to unleash absurdly BIG numbers</span></li>
           <li><span class="ico" aria-hidden="true">🗺️</span><span><b>Learn monster patterns</b> and conquer tricky gimmicks across nine biomes</span></li>
-          <li><span class="ico" aria-hidden="true">🏆</span><span><b>Take on weekly Trials</b>, a boss rush with its own server leaderboard</span></li>
-          <li><span class="ico" aria-hidden="true">👗</span><span><b>Customize your companion</b> into your perfect chibi waifu or husbando</span></li>
+          <li><span class="ico" aria-hidden="true">💎</span><span><b>Collect artifacts and master classes</b> to find your perfect play style</span></li>
+          <li><span class="ico" aria-hidden="true">👗</span><span><b>Customize your companion</b> into your perfect chibi waifu or husbando!</span></li>
         </ul>
+        <p class="closer">Play Forcana for free, climb leaderboards, and earn bragging rights along the way!</p>
       </div>
     </div>
   </section>
